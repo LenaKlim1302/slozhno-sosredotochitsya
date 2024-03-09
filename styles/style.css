@@ -1,5 +1,339 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  block-size: 100%;
+}
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  display: flex;
+  flex-direction: column;
+  font-family: IBM Plex Mono, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 23.4px;
+  margin: 0;
+  padding: 0;
+  background-color: var( --background-color); 
+  background-image: var(--page-image);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; 
+}
+
+
+
+
+
+.header {
+  display: grid;
+  justify-self: space-between;
+width: 100%;
+max-height: 668px;
+margin: 0;
+padding: 0;
+}
+
+/*.decoration {
+  display: flex;
+  flex-direction: row;
+padding: 0;
+margin: 0;
+margin-block-start: 20px;
+gap: 5px;
+
+}
+
+.icon-text {
+  display: inline-block;
+  color: #FF0070;
+ margin: 0 0 0 16.889em;
+ text-align: end;
+ padding: 0;
+
+}
+
+.decorated-zone {
+  border-inline-end: 1px solid #FF0070;
+  border-top: 1px solid #FF0070;
+  border-top-width: 1px;
+  border-right-width: 2px;
+
+}
+
+.icon-top {
+  display: inline-block;
+ 
+  margin: 0;
+
+
+  min-width: 1em;
+  min-height: 1em;
+
+  text-align: end;
+}
+
+.icon-top::after {
+  display: block;
+  position: absolute;
+  content: 'p';
+  border: 1px solid white;
+width: 9px;
+height: 9px;
+text-align: end;
+} */
+
+.header__theme-menu  {
+  display: inline-block;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: end; 
+
+margin: 0;
+margin-right: 0.555em;
+padding: 0;
+
+}
+
+
+.header__theme-menu-button{
+background-color: transparent;
+color: var(--navigagtion-text-color);
+border: none;
+text-transform: lowercase; 
+width: 3.9em;
+}
+
+.header__theme-menu-button:hover {
+  outline: var(--nav-outline);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+  }
+
+.header__theme-menu-button:focus-visible {
+text-decoration: underline;
+}
+
+.header__theme-menu-item {
+  color: var(--navigagtion-text-color);
+}
+
+
+.heading-tittle {
+color: var(--title-color);
+font-family: IBM Plex Mono;
+font-weight: 700;
+line-height: 96px;
+text-align: left;
+text-shadow: 4px 4px 0 var(--accent-color);
+margin: 0
+margin-top: 238px;
+}
+
+
+@media (375px <= width < 768px) {
+  .heading-tittle   {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+}
+
+@media (768px <= width < 1024px) {
+  .heading-tittle   {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading-tittle   {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+
+
+.introduction {
+  display: inline-block;
+  width: 365px;
+  font-family: IBM Plex Mono, Arial, sans-serif;
+  font-weight: 700;
+  background-color: var( --accent-color);
+  color: var( --accent-text-color);
+justify-self: end;
+margin-right: 10px;
+}
+
+
+.subtitle {
+  color: var(--subtitle-color);
+}
+
+.item-heading {
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
+}
+
+.last-item-heading {
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
+  font-weight: 700;
+}
+
+.normal-weight-heading {
+  font-weight: 400;
+}
+
+.main-text {
+  color: var(--main-text-color);
+  margin: 10px 0 20px 0;
+}
+
+.main {
+  margin: 0;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 60px;
+}
+
+@media (375px <= width < 768px) {
+  .first-block   {
+    display: grid;
+    margin: 0 10px 0 10px;
+  }
+}
+
+@media (768px <= width) {
+  .first-block   {
+display: grid;
+grid-template-columns: 1fr 2fr;
+/*grid-template-columns: auto auto;  Две колонки */
+grid-template-rows: auto auto ; /* Две строки */
+margin: 0;
+grid-column-gap: 20px;
+  }
+  
+  .first-block .subtitle   {
+    grid-row: span 4;
+    margin: 0;
+      }
+}
+
+.item-heading {
+margin: 0;
+}
+
+/*@media (375px <= width < 768px) {
+  .second-block  {
+    display: grid;
+    margin: 80px 10px 0 10px;
+  }
+} */
+
+@media ( width < 1024px) {
+  .second-block   {
+display: grid;
+margin: 60px 0 0 0;
+  }
+  
+  .second-block .subtitle   {
+   margin: 0 0 20px 0;
+      }
+}
+
+@media (width > 1024px) {
+  .second-block   {
+display: grid;
+grid-auto-flow: column; 
+column-gap: 20px;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto auto auto;
+margin: 60px 0 0 0;
+  }
+  
+  .second-block .subtitle   {
+   margin: 0 0 20px 0;
+   grid-column: 1 / span 3;
+max-width: 33%;
+      }
+}
+
+
+/*      */
+@media (768px <= width) {
+.third-block   {
+display: grid;
+grid-template-columns: 1fr 2fr;
+margin: 60px 0 0 0;
+grid-column-gap: 20px;
+  }
+  
+  .third-block .subtitle   {
+    grid-row: span 11;
+    margin: 0;
+      }
+}
+
+.last-item-heading {
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+
+
+
+
+.section__image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  min-width: 100%; /* Изображение не будет превышать размеры ячейки */
+  min-height: 100%; 
+
+}
+
+.pictures {
+  display: grid;
+  margin: 20px 0 0 0;
+  gap: 10px;
+}
+
+@media (width > 768px) {
+  .pictures {
+    display: grid;
+    gap: 10px; /* Отступ между ячейками */
+  margin: 20px 0 0 0;
+    object-fit: cover;
+    grid-template-areas:
+    "sunset sunset ice-cream"
+    "tape books ice-cream"
+    "tape street street";
+  }
+
+  .sunset {
+    grid-area: sunset;
+  
+  }
+
+  .ice-cream {
+    grid-area: ice-cream;
+  }
+  
+  .tape {
+    grid-area: tape ;
+  }
+  
+  .books {
+    grid-area: books;
+  }
+
+  .street {
+    grid-area: street;
+  }
+
 }
