@@ -20,6 +20,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: center; 
+  
 }
 
 
@@ -51,7 +52,7 @@ padding: 0;
 @media (min-width: 1024px) {
 .header__theme-menu {
   display: grid;
-  grid-template-columns: auto 76px;
+  grid-template-columns: auto 26px;
   align-items: center;
   margin-block-start: 20px;
 }
@@ -128,6 +129,7 @@ display: none;
   border-right: 1px solid #353430;
   border-top: 1px solid #353430;
 }
+
 
 
 
@@ -221,7 +223,7 @@ padding: 0;
 @media (min-width: 1024px) {
   .heading-tittle   {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  margin: 273px 0 130px 0;
+  margin: 300px 0 127px 0;
   }
 }
 
@@ -254,6 +256,12 @@ margin: 0 10px 0 0;
 
   border-left: 1px solid #FF0070;
   border-bottom: 1px solid #FF0070;
+}
+
+@media (width >=768px) {
+  .icon-bottom {
+    margin-left: 20px;
+  }
 }
  
 .page.theme_light .icon-bottom {
