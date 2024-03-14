@@ -29,11 +29,8 @@ html {
 
 .header {
   display: grid;
-
   justify-self: space-between;
-width: 100%;
-min-height: 668px;
-max-height: 768px;
+
 margin: 0;
 padding: 0;
 }
@@ -97,10 +94,21 @@ margin: 0;
 padding: 0;
 margin: 20px 20px 0 0;
 gap: 5px;
-
-
 }
 }
+
+@media (375px <= width< 768px){
+  .decoration {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  padding: 0;
+  margin: 10px 12px 0 0;
+  gap: 5px;
+  }
+  }
+
+
 .page.theme_dark .icon-text  {
   display: inline-block;
   color: #FF0070;
@@ -231,6 +239,7 @@ padding: 0;
 .introduction {
   display: inline-block;
   width: 355px;
+  height: fit-content;
   font-family: IBM Plex Mono, Arial, sans-serif;
   font-weight: 700;
   line-height: 23.4px;
@@ -252,8 +261,7 @@ margin: 0 10px 0 0;
   display: block;
   width: 25px;
   height: 25px;
-  margin: 30px 0 0 10px;
-
+  margin: 33px 0 0 10px;
   border-left: 1px solid #FF0070;
   border-bottom: 1px solid #FF0070;
 }
@@ -275,11 +283,17 @@ margin: 0 10px 0 0;
   font-family: IBM Plex Mono, Arial, sans-serif;
   font-size: 18px;
   line-height: 23.4px;
+margin: 0 0 20px 0;
 }
 
 .item-heading {
   background-color: var(--accent-color);
   color: var(--accent-text-color);
+  font-family: IBM Plex Mono, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
 }
 
 .last-item-heading {
@@ -288,17 +302,18 @@ margin: 0 10px 0 0;
   font-weight: 700;
 }
 
-.normal-weight-heading {
-  font-weight: 400;
-}
 
 .main-text {
   color: var(--main-text-color);
-  margin: 10px 0 20px 0;
+  margin: 0 0 20px 0;
+  font-family: IBM Plex Mono, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 23.4px;
+font-weight: 400;
 }
 
 .main {
-  margin: 40px 10px 0 10px;
+  margin: 50px 10px 0 10px;
 }
 
 @media (375px <= width < 768px) {
@@ -324,9 +339,7 @@ grid-column-gap: 20px;
       }
 }
 
-.item-heading {
-margin: 0;
-}
+
 
 /*@media (375px <= width < 768px) {
   .second-block  {
@@ -338,7 +351,7 @@ margin: 0;
 @media ( width < 1024px) {
   .second-block   {
 display: grid;
-margin: 60px 0 0 0;
+margin: 20px 0 0 0;
   }
   
   .second-block .subtitle   {
@@ -363,8 +376,11 @@ max-width: 33%;
       }
 }
 
+.third-block   {
+  margin: 25px 0 0 0;
+    }
 
-/*      */
+
 @media (768px <= width) {
 .third-block   {
 display: grid;
@@ -398,11 +414,24 @@ grid-column-gap: 20px;
 
 }
 
+.item-heading-pictures {
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
+  font-family: IBM Plex Mono, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 700;
+  margin: 50px 0 10px 0;
+}
+
+
 .pictures {
   display: grid;
   margin: 10px 0 0 0;
   gap: 10px;
 }
+
+
 
 @media (width > 768px) {
   .pictures {
