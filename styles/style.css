@@ -287,15 +287,15 @@ margin: 0 10px 0 0;
 }
 
 .first-block .subtitle {
-margin: 48px 0 20px 0;
+margin: 48px 0 0px 0;
 }
 
 .second-block .subtitle { 
-  margin: 50px 0 20px 0;
+  margin: 52px 0 20px 0;
   }
 
 .third-block .subtitle { 
-    margin: 50px 0 20px 0;
+    margin: 48px 0 20px 0;
     }
 
 
@@ -307,7 +307,7 @@ margin: 48px 0 20px 0;
   font-size: 18px;
   line-height: 23.4px;
   font-weight: 700;
-  margin: 10px 0 10px 0;
+  margin: 17px 0 10px 0;
 }
 
 .last-item-heading {
@@ -480,7 +480,7 @@ grid-column-gap: 20px;
 .footer {
   display: flex;
   width: 100%;
-min-height: 648px;
+min-height: 668px;
   flex-direction: column;
   margin: 40px 0 0 0;
   justify-content: space-between;
@@ -513,7 +513,7 @@ min-height: 648px;
   display: block;
   width: 25px;
   height: 25px;
-margin-left: 10px;
+margin: 0 0 10px 10px;
 
   border-left: 1px solid #FF0070;
   border-bottom: 1px solid #FF0070;
