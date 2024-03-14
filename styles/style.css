@@ -283,8 +283,22 @@ margin: 0 10px 0 0;
   font-family: IBM Plex Mono, Arial, sans-serif;
   font-size: 18px;
   line-height: 23.4px;
-margin: 0 0 20px 0;
+
 }
+
+.first-block .subtitle {
+margin: 48px 0 20px 0;
+}
+
+.second-block .subtitle { 
+  margin: 27px 0 20px 0;
+  }
+
+.third-block .subtitle { 
+    margin: 48px 0 20px 0;
+    }
+
+
 
 .item-heading {
   background-color: var(--accent-color);
@@ -293,7 +307,7 @@ margin: 0 0 20px 0;
   font-size: 18px;
   line-height: 23.4px;
   font-weight: 700;
-  margin: 0 0 10px 0;
+  margin: 0 0 8px 0;
 }
 
 .last-item-heading {
@@ -313,7 +327,7 @@ font-weight: 400;
 }
 
 .main {
-  margin: 50px 10px 0 10px;
+  margin: 0 10px 0 10px;
 }
 
 @media (375px <= width < 768px) {
@@ -341,23 +355,19 @@ grid-column-gap: 20px;
 
 
 
-/*@media (375px <= width < 768px) {
-  .second-block  {
-    display: grid;
-    margin: 80px 10px 0 10px;
-  }
-} */
 
-@media ( width < 1024px) {
+
+
+/*@media ( width < 1024px) {
   .second-block   {
 display: grid;
-margin: 20px 0 0 0;
+margin: 40px 0 0 0;
   }
   
   .second-block .subtitle   {
-   margin: 0 0 20px 0;
+   margin: 10 0 0px 0;
       }
-}
+} сейчас добавила*/ 
 
 @media (width > 1024px) {
   .second-block   {
@@ -409,8 +419,7 @@ grid-column-gap: 20px;
   width: 100%;
   object-fit: cover;
   object-position: center;
-  min-width: 100%; /* Изображение не будет превышать размеры ячейки */
-  min-height: 100%; 
+
 
 }
 
@@ -427,8 +436,8 @@ grid-column-gap: 20px;
 
 .pictures {
   display: grid;
-  margin: 10px 0 0 0;
   gap: 10px;
+  overflow: hidden;
 }
 
 
@@ -456,6 +465,7 @@ grid-column-gap: 20px;
   
   .tape {
     grid-area: tape ;
+   
   }
   
   .books {
@@ -471,9 +481,9 @@ grid-column-gap: 20px;
 .footer {
   display: flex;
   width: 100%;
-min-height: 668px;
+min-height: 640px;
   flex-direction: column;
-  margin: 40px 0 0 0;
+  margin: 43px 0 0 0;
   justify-content: space-between;
 }
 
@@ -512,17 +522,18 @@ margin-left: 10px;
  
 .footer-title {
 color: var(--title-color);
-font-family: IBM Plex Mono, Arial, sans-serif; /*дописать*/
+font-family: IBM Plex Mono, Arial, sans-serif; 
 font-weight: 700;
 line-height: 96px;
 text-shadow: 4px 4px 0 var(--accent-color);
-width: 100%;
-text-align: center;
+
+text-align: start;
 }
 
 @media (375px <= width < 768px) {
   .footer-title  {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  width: 100%;
   margin: 70px 0 55px 10px;
   }
 }
