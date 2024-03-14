@@ -291,11 +291,11 @@ margin: 48px 0 20px 0;
 }
 
 .second-block .subtitle { 
-  margin: 27px 0 20px 0;
+  margin: 25px 0 20px 0;
   }
 
 .third-block .subtitle { 
-    margin: 48px 0 20px 0;
+    margin: 50px 0 20px 0;
     }
 
 
@@ -436,8 +436,8 @@ grid-column-gap: 20px;
 
 .pictures {
   display: grid;
+  margin: 10px 0 0 0;
   gap: 10px;
-  overflow: hidden;
 }
 
 
@@ -465,7 +465,6 @@ grid-column-gap: 20px;
   
   .tape {
     grid-area: tape ;
-   
   }
   
   .books {
@@ -481,9 +480,9 @@ grid-column-gap: 20px;
 .footer {
   display: flex;
   width: 100%;
-min-height: 640px;
+min-height: 648px;
   flex-direction: column;
-  margin: 43px 0 0 0;
+  margin: 40px 0 0 0;
   justify-content: space-between;
 }
 
@@ -522,18 +521,17 @@ margin-left: 10px;
  
 .footer-title {
 color: var(--title-color);
-font-family: IBM Plex Mono, Arial, sans-serif; 
+font-family: IBM Plex Mono, Arial, sans-serif; /*дописать*/
 font-weight: 700;
 line-height: 96px;
 text-shadow: 4px 4px 0 var(--accent-color);
-
-text-align: start;
+width: 100%;
+text-align: center;
 }
 
 @media (375px <= width < 768px) {
   .footer-title  {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  width: 100%;
   margin: 70px 0 55px 10px;
   }
 }
