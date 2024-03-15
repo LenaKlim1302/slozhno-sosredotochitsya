@@ -7,8 +7,8 @@
   --accent-text-color:#000028;
   --subtitle-color:#FF0070;
   --main-text-color: #F1B2CE;
-
   --page-image: url("../images/cover-image-dark.png");
+  --hyperlink-outline: #F1B2CE;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,6 +21,7 @@
     --accent-text-color:#000028;
     --subtitle-color:#FF0070;
     --main-text-color: #F1B2CE;
+    --hyperlink-outline: #F1B2CE;
     }
 }
 

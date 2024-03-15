@@ -20,7 +20,28 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /*background-attachment: fixed;*/
+  height: 100vh;
 }
+
+.hyperlink {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 #FF0070;
+}
+
+.hyperlink:hover {
+  text-decoration: underline;
+}
+
+.hyperlink:focus {
+  outline: none;
+}
+
+.hyperlink:focus-visible {
+  outline: 1px solid var(--hyperlink-outline);
+ 
+}
+
 
 .header {
   display: grid;
@@ -171,6 +192,11 @@ html {
   text-decoration: underline;
 }
 
+
+.header__theme-menu-button_active {   
+  pointer-events: none;
+}
+
 .header__theme-menu-item {
   color: var(--navigagtion-text-color);
 }
@@ -196,7 +222,7 @@ html {
 @media (768px <= width < 1024px) {
   .heading-tittle {
       font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-      margin: 180px 0 160px 0;
+      margin: 200px 0 160px 0;
   }
 }
 
@@ -520,12 +546,13 @@ max-width: 236px;
   text-shadow: 4px 4px 0 var(--accent-color);
   width: 100%;
   text-align: center;
+  margin: 0;
 }
 
 @media (375px <= width < 768px) {
   .footer-title {
       font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-      margin: 70px 0 55px 10px;
+      margin: 70px 0 55px 0;
   }
 }
 
