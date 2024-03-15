@@ -44,7 +44,7 @@ html {
 .header {
   display: grid;
   justify-self: space-between;
-  height: 100vh;
+  /*height: 100vh;*/
   margin: 0;
   padding: 0;
 }
@@ -224,7 +224,7 @@ html {
 @media (min-width: 1024px) {
   .heading-tittle {
       font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-      margin: 300px 0 127px 0;
+      margin: 300px 0 120px 0;
   }
 }
 
@@ -253,7 +253,7 @@ html {
   .introduction {
       width: 491px;
       height: fit-content;
-      margin: 0 20px 60px 0;
+      margin: 0 20px 67px 0;
   }
 }
 
@@ -341,7 +341,7 @@ main {
 @media (width >= 768px) {
   .first-block {
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: minmax(236px, 315px) 2fr;
       /*grid-template-columns: auto auto;  Две колонки */
       grid-template-rows: auto auto; /* Две строки */
 
@@ -352,7 +352,7 @@ main {
   .first-block .subtitle {
       grid-column: 1;
       margin: 0;
-      width: 236px;
+   
   }
 
   .first-block .item-heading,
@@ -404,11 +404,11 @@ main {
       column-gap: 20px;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto auto auto;
-      margin: 60px 0 0 0;
+      margin: 75px 0 0 0;
   }
 
   .second-block .subtitle {
-      margin: 0 0 20px 0;
+      margin:0;
       grid-column: 1 / span 3;
       max-width: 33%;
   }
@@ -416,6 +416,13 @@ main {
 
 .third-block {
   margin: 25px 0 0 0;
+}
+
+.normal-weight-heading {
+  font-weight: 400;
+font-size: 18px;
+line-height: 23.4px;
+
 }
 
 @media (768px <= width) {
@@ -432,6 +439,11 @@ main {
   }
 }
 
+@media (width >= 1024px) {
+  .third-block {
+    margin-block-start: 75px;
+  }
+}
 
 .section__image {
   width: 100%;
