@@ -52,9 +52,9 @@ html {
 @media (min-width: 1024px) {
   .header__theme-menu {
       display: grid;
-      grid-template-columns: auto 10px;
+      grid-template-columns: auto 8px;
       align-items: center;
-      margin-block-start: 20px;
+      margin-block-start: 17px;
   }
 
   .header__theme-menu-list {
@@ -224,7 +224,7 @@ html {
 @media (min-width: 1024px) {
   .heading-tittle {
       font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-      margin: 290px 0 130px 0;
+      margin: 293px 0 130px 0;
   }
 }
 
@@ -378,6 +378,9 @@ main {
 }
 
 @media (width >= 1024px) {
+  .first-block {
+    margin-block-start: 82px;
+  }
   .first-block .subtitle {
     width: 315px;
 }
@@ -517,6 +520,18 @@ line-height: 23.4px;
 
   .street {
       grid-area: street;
+  }
+}
+
+@media (width < 768px) {
+  .pictures {
+    grid-template-areas:
+      "sunset"
+      "ice-cream"
+      "tape"
+      "books"
+      "street";
+    grid-template-columns: 1fr;
   }
 }
 
