@@ -1,11 +1,11 @@
-:root.theme-light  {
-  --title-color:#FFC2E6;
-  --background-color: #FFF1F7;
-  --navigagtion-text-color:#353430;
+:root.theme-light {
+  --title-color: #ffc2e6;
+  --background-color: #fff1f7;
+  --navigagtion-text-color: #353430;
   --nav-outline: 1px solid #353430;
-  --accent-color:#FF8DCB;
-  --accent-text-color:#353430;
-  --subtitle-color:#353430;
+  --accent-color: #ff8dcb;
+  --accent-text-color: #353430;
+  --subtitle-color: #353430;
   --main-text-color: #353430;
   --page-image: url("../images/cover-image-light.png");
   --hyperlink-outline: #353430;
@@ -13,24 +13,23 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --title-color:#FFC2E6;
-    --background-color: #FFF1F7;
-    --navigagtion-text-color:#353430;
-    --nav-outline: 1px solid #353430;
-    --accent-color:#FF8DCB;
-    --accent-text-color:#353430;
-    --subtitle-color:#353430;
-    --main-text-color: #353430;  
-    --page-image: url("../images/cover-image-light.png");
-    --hyperlink-outline: #353430;
-    }
+      --title-color: #ffc2e6;
+      --background-color: #fff1f7;
+      --navigagtion-text-color: #353430;
+      --nav-outline: 1px solid #353430;
+      --accent-color: #ff8dcb;
+      --accent-text-color: #353430;
+      --subtitle-color: #353430;
+      --main-text-color: #353430;
+      --page-image: url("../images/cover-image-light.png");
+      --hyperlink-outline: #353430;
+  }
 }
 
 .page.theme_light {
   --page-image: url("../images/cover-image-light.png");
-
 }
 
 .header__theme-menu-button_type_light :hover {
   outline: 1px solid #353430;
-}  /* что это?*/
+} /* что это?*/
