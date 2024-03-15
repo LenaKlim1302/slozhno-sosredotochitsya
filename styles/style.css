@@ -513,9 +513,9 @@ line-height: 23.4px;
 
 @media (width >= 768px) {
 
-  /*.item-heading-pictures {
+  .item-heading-pictures {
     margin: 75px 0 10px 0;
-  } */
+  } 
 
   .pictures {
       display: grid;
