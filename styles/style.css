@@ -26,7 +26,7 @@ html {
 
 .hyperlink {
   text-decoration: none;
-  text-shadow: 2px 2px 0 #ff0070;
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .hyperlink:hover {
@@ -189,6 +189,7 @@ html {
 
 .header__theme-menu-button_active {
   pointer-events: none;
+  outline: var(--nav-outline);
 }
 
 .header__theme-menu-item {
@@ -223,7 +224,7 @@ html {
 @media (min-width: 1024px) {
   .heading-tittle {
       font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-      margin: 300px 0 127px 0;
+      margin: 305px 0 127px 0;
   }
 }
 
@@ -242,9 +243,9 @@ html {
 
 @media (768px <= width < 1024px) {
   .introduction {
-      width: 355px;
+      width: 364px;
       height: fit-content;
-      margin: 0 20px 110px 0;
+      margin: 0 20px 115px 0;
   }
 }
 
@@ -265,9 +266,15 @@ html {
   border-bottom: 1px solid #ff0070;
 }
 
-@media (width >=768px) {
+@media (width >= 768px) {
   .icon-bottom {
       margin-left: 20px;
+  }
+}
+
+@media (width >= 1024px) {
+  .icon-bottom {
+      margin: 20px 0 0 20px;
   }
 }
 
@@ -309,6 +316,7 @@ html {
   background-color: var(--accent-color);
   color: var(--accent-text-color);
   font-weight: 700;
+  margin: 0 0 20px 0;
 }
 
 .main-text {
@@ -344,6 +352,7 @@ main {
   .first-block .subtitle {
       grid-column: 1;
       margin: 0;
+      width: 236px;
   }
 
   .first-block .item-heading,
@@ -367,6 +376,12 @@ main {
   .first-block .item-heading {
       margin: 0 0 8px 0;
   }
+}
+
+@media (width >= 1024px) {
+  .first-block .subtitle {
+    width: 315px;
+}
 }
 
 @media (768px <= width < 1024px) {
@@ -417,11 +432,6 @@ main {
   }
 }
 
-.last-item-heading {
-  margin: 0 0 20px 0;
-  font-weight: 700;
-  font-size: 18px;
-}
 
 .section__image {
   width: 100%;
