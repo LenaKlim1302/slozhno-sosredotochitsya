@@ -43,7 +43,7 @@ html {
 .header {
   display: grid;
   justify-self: space-between;
-  height: 100vh;
+  /*height: 100vh;*/
   margin: 0;
   padding: 0;
 }
@@ -270,7 +270,7 @@ html {
   display: block;
   width: 25px;
   height: 25px;
-  margin: 33px 0 0 10px;
+  margin: 25px 0 0 10px;
   border-left: 1px solid #ff0070;
   border-bottom: 1px solid #ff0070;
 }
@@ -340,38 +340,11 @@ html {
 main {
   margin: 0 10px 0 10px;
 }
-
-@media (width >= 768px) {
+@media (min-width: 768px) {
   main {
-      margin: 330px 20px 0 20px;
+      margin: 80px 20px 0 20px;
   }
-}
 
-@media (width >= 1024px) {
-  main {
-      margin: 70px 20px 0 20px;
-  }
-}
-
-@media (width >= 1024px) {
-  .first-block {
-      margin: 0px 0 0 0;
-  }
-}
-
-@media (768px <= width < 1024px) {
-  .first-block {
-      margin: 0px 0 0 0;
-  }
-}
-
-@media (width >= 1024px) {
-  .first-block {
-      margin: 0px 0 0 0;
-  }
-}
-
-@media (width >= 768px) {
   .first-block {
       display: grid;
       grid-template-columns: auto auto; 
@@ -383,7 +356,6 @@ main {
       grid-column: 1;
       width: 236px;
       margin: 0;
-   
   }
 
   .first-block .item-heading,
@@ -396,10 +368,9 @@ main {
   .first-heading,
   .first-text {
       grid-area: 1;
-  }
-  .first-heading {
       margin-top: 0;
   }
+  
   .first-text {
       padding: 32px 0 20px 0;
   }
@@ -409,17 +380,23 @@ main {
   }
 }
 
-@media (width >= 1024px) {
+@media (min-width: 1024px) {
+  main {
+      margin: 70px 20px 0 20px;
+  }
+
+  .first-block {
+      margin: 0;
+  }
 
   .first-block .subtitle {
-    width: 315px;
-}
+      width: 315px;
+  }
 
-.first-text {
-padding-top: 32px;
-padding-bottom: 20px;
-}
-
+  .first-text {
+      padding-top: 32px;
+      padding-bottom: 20px;
+  }
 }
 
 @media (768px <= width < 1024px) {
