@@ -20,8 +20,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /*background-attachment: fixed;
-  height: 100vh;*/
+  background-attachment: fixed;
 }
 
 .hyperlink {
@@ -494,6 +493,7 @@ line-height: 23.4px;
   object-position: center;
   min-width: 100%;
   min-height: 100%;
+  
 }
 
 .item-heading-pictures {
