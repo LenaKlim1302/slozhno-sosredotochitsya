@@ -605,7 +605,6 @@ line-height: 23.4px;
   text-shadow: 4px 4px 0 var(--accent-color);
   width: 100%;
   text-align: center;
-  margin: 0;
 }
 
 @media (375px <= width < 768px) {
