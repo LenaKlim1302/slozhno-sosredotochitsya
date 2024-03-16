@@ -20,11 +20,11 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
+  /*background-attachment: fixed;
+  height: 100vh;*/
 }
 
-/*.hyperlink {
+.hyperlink {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
 }
@@ -39,7 +39,7 @@ html {
 
 .hyperlink:focus-visible {
   outline: 1px solid var(--hyperlink-outline);
-}*/
+}
 
 .header {
   display: grid;
