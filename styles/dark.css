@@ -49,9 +49,11 @@
   position: relative;
   }
 
-  @media (width >= 678px) {
+  @media (width >= 768px) {
     .page.theme_dark .icon-text {
-    width: fit-content;
+      margin: 20px 42px 0 0;
+     width: fit-content;
+     justify-self: end;
     }
   }
 
@@ -65,7 +67,6 @@ background-color: #ff0070;
 box-shadow: 0 0 4px 2px #ff0070;
 margin-left: 5px;
 top: 30%;
-
 
 }
 
