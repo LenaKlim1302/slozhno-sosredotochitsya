@@ -2,7 +2,7 @@
   --title-color: #db00ff;
   --background-color: #000028;
   --navigagtion-text-color: #ff0070;
-  --nav-outline: 1px solid #ff0070;
+  --nav-outline: rgba(255 0 112, 0.5);
   --accent-color: #ff0070;
   --accent-text-color: #000028;
   --subtitle-color: #ff0070;
@@ -17,7 +17,7 @@
       --title-color: #db00ff;
       --background-color: #000028;
       --navigagtion-text-color: #ff0070;
-      --nav-outline: 1px solid #ff0070;
+      --nav-outline: rgba(255, 0, 112, 0.4);
       --accent-color: #ff0070;
       --accent-text-color: #000028;
       --subtitle-color: #ff0070;
@@ -31,7 +31,7 @@
   --title-color: #db00ff;
   --background-color: #000028;
   --navigagtion-text-color: #ff0070;
-  --nav-outline: 1px solid #ff0070;
+  --nav-outline: rgba(255, 0, 112, 0.4);
   --accent-color: #ff0070;
   --accent-text-color: #000028;
   --subtitle-color: #ff0070;
