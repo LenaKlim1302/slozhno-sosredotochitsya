@@ -98,7 +98,6 @@ grid-row: 1;
  height: 25px;
 justify-self: start;
 align-self: end;
-margin-top: 20px;
 margin-left: 10px;
 grid-row: 3;
 }
@@ -157,13 +156,10 @@ top: 9px;
 .header__theme-menu {
   grid-row: 1;
   grid-column: 1;
-
-margin-top: 30px;
 }
 
 @media (width >= 768px) {
 .header__theme-menu {
- 
   margin-block-start: 20px;
 }
 }
