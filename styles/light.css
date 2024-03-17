@@ -32,10 +32,11 @@
   --page-image: url("../images/cover-image-light.png");
 }
 
-.header__theme-menu-button_type_light :hover {
-  outline: 1px solid #353430;
-}
+
 
 .page.theme_light .icon-text {
   display: none;
+}
+.page.theme_dark .header__theme-menu {
+  grid-row-start: 1;
 }
