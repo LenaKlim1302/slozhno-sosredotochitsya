@@ -55,15 +55,13 @@ button {
     height: 100vh;
     min-height: 668px;
     padding: 0;
-    margin-block-start: 10px;
-    padding-bottom: 10px; /* отступ */
+    padding-block-start: 10px;
 }
 
 @media (min-width: 768px) {
     .header {
         min-height: 1024px;
-        margin-block-start: 20px;
-        padding-bottom: 10px;
+        padding-block-start: 20px;
     }
 }
 
@@ -100,14 +98,14 @@ button {
     justify-self: start;
     align-self: end;
     margin-left: 10px;
-    margin-bottom: 30px; /*тступ*/
+    margin-bottom: 10px; /*тступ*/
     grid-row: 3;
 }
 
 @media (min-width: 768px) {
     .decorated-zone::before {
         margin-left: 20px;
-        margin-bottom: 50px; /*тступ*/
+        margin-bottom: 20px; /*тступ*/
     }
 
     .decorated-zone::after {
