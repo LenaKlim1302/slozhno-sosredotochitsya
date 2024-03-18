@@ -291,16 +291,9 @@ button {
     line-height: 23.4px;
 }
 
-.difficulties-block .subtitle {
-    margin: 0 0 0 0;
-}
-
-.second-block .subtitle {
-    margin: 52px 0 20px 0;
-}
 
 .how-to-block .subtitle {
-    margin: 48px 0 20px 0;
+    margin-block-end: 20px;
 }
 
 .item-heading {
@@ -329,15 +322,20 @@ button {
 }
 
 main {
+    display: grid;
+    gap: 50px;
     margin: 40px 10px 0 10px;
 }
 
 .note {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin-block-start: 20px;
     gap: 10px;
 }
+
+
+
 
 @media (min-width: 768px) {
     main {
@@ -354,7 +352,7 @@ main {
     .difficulties-block .subtitle {
         grid-column: 1;
         grid-row: 1 / span 2;
-        width: 236px;
+        min-width: 236px;
         margin: 0;
     }
 
@@ -392,7 +390,7 @@ main {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto;
         grid-template-rows: auto-fill;
-        margin: 75px 0 0 0;
+      /*  margin: 75px 0 0 0;*/
     }
 
     .concentration-reduction-block .subtitle {
@@ -401,9 +399,6 @@ main {
     }
 }
 
-.how-to-block {
-    margin: 25px 0 0 0;
-}
 
 .normal-weight-heading {
     font-weight: 400;
@@ -461,6 +456,7 @@ main {
     font-weight: 700;
 grid-row: 1;
 grid-column: 1;
+margin-block-end: 20px;
 }
 
 .pictures {
