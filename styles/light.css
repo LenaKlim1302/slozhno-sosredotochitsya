@@ -28,12 +28,6 @@
   }
 }
 
-.page.theme_light {
-  --page-image: url("../images/cover-image-light.png");
-}
-
-
-
 .page.theme_light .icon-text {
   display: none;
 }
