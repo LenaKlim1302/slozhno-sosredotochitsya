@@ -98,19 +98,19 @@ button {
     justify-self: start;
     align-self: end;
     left: 10px;
- bottom: 10px;
+    bottom: 10px;
     grid-row: 3;
 }
 
 @media (min-width: 768px) {
     .decorated-zone::before {
         left: 20px;
-        bottom: 20px
+        bottom: 20px;
     }
 
     .decorated-zone::after {
-    right: 20px;
-    top: 0;
+        right: 20px;
+        top: 0;
     }
 }
 
@@ -133,7 +133,7 @@ button {
     border-radius: 50%;
     background-color: #ff0070;
     box-shadow: 0 0 4px 2px #ff0070;
-    right: -16px; 
+    right: -16px;
     top: 9px;
 }
 
@@ -146,7 +146,7 @@ button {
     }
 
     .icon-text::after {
-        right: -6px; 
+        right: -6px;
     }
 }
 
@@ -156,7 +156,6 @@ button {
     margin-right: 10px;
     min-height: 99px;
     align-self: center;
-    
 }
 
 .header__theme-menu-list {
@@ -166,10 +165,7 @@ button {
     list-style-type: none;
     gap: 10px;
     padding: 0;
-  
 }
-
-
 
 @media (min-width: 768px) {
     .header__theme-menu {
@@ -214,7 +210,6 @@ button {
 .header__theme-menu-button:focus-visible {
     border-bottom: 1px solid var(--decoration-color);
 }
-
 
 .header__theme-menu-button_active {
     pointer-events: none;
@@ -367,17 +362,15 @@ main {
     }
 
     .difficulties-block .subtitle {
-      grid-column: 1;
-      grid-row: auto; 
+        grid-column: 1;
+        grid-row: auto;
     }
 
     .difficulties-block .note {
-        grid-column: 2; 
-        grid-row: auto; 
+        grid-column: 2;
+        grid-row: auto;
     }
-
 }
-
 
 @media (min-width: 1024px) {
     main {
@@ -512,10 +505,10 @@ main {
 .footer {
     display: grid;
     width: 100%;
-    padding: 20px 0 0 0;
+    padding: 10px 0 0 0;
     margin-top: 20px;
     justify-content: center;
-    /*height: 100vh;*/
+    height: 100vh;
     min-height: 668px;
 }
 
@@ -541,9 +534,10 @@ main {
 }
 
 @media (min-width: 768px) {
-.footer {
-    min-height: 1024px;
-}
+    .footer {
+        min-height: 1024px;
+        padding: 20px 0 0 0;
+    }
     .footer-title {
         font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
@@ -553,7 +547,7 @@ main {
     .footer {
         min-height: 768px;
     }
-      
+
     .footer-title {
         font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }

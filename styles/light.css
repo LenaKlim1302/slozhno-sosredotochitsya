@@ -1,5 +1,4 @@
 @media (prefers-color-scheme: light) {
-
   .page {
       --title-color: #ffc2e6;
       --background-color: #fff1f7;
@@ -15,14 +14,14 @@
   }
 
   .icon-text {
-    display: none;
+      display: none;
   }
 
   .page.theme-auto.icon-text {
-    display: none;
+      display: none;
   }
 }
-  
+
 .page.theme-light {
   --title-color: #ffc2e6;
   --background-color: #fff1f7;
@@ -37,15 +36,9 @@
   --decoration-color: #353430;
 }
 
-
-
-
-  .page.theme_light  .icon-text {
-    display: none;
-  }
-
-
-
+.page.theme_light .icon-text {
+  display: none;
+}
 
 .page.theme_dark .header__theme-menu {
   grid-row-start: 1;
