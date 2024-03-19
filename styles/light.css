@@ -1,5 +1,5 @@
-.page.theme-light,
-:root {
+.page.theme_light,
+:root.theme_light {
   --title-color: #ffc2e6;
   --background-color: #fff1f7;
   --navigagtion-text-color: #353430;
@@ -15,7 +15,7 @@
 
 
 @media (prefers-color-scheme: light) {
-  .page.theme-light,
+  .page.theme_light,
   .page.theme_auto,
   :root.theme_auto {
       --title-color: #ffc2e6;
