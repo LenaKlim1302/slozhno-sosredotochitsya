@@ -13,6 +13,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  .page.theme_dark,
   .page.theme_auto,
   :root {
   --title-color: #db00ff;
