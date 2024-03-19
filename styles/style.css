@@ -83,8 +83,9 @@ button {
     width: 25px;
     height: 25px;
     justify-self: end;
-    margin: 0 10px 0 0;
     grid-row: 1;
+    right: 10px;
+    top: 0;
 }
 
 .decorated-zone::before {
@@ -96,19 +97,20 @@ button {
     height: 25px;
     justify-self: start;
     align-self: end;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    left: 10px;
+ bottom: 10px;
     grid-row: 3;
 }
 
 @media (min-width: 768px) {
     .decorated-zone::before {
-        margin-left: 20px;
-        margin-bottom: 20px;
+        left: 20px;
+        bottom: 20px
     }
 
     .decorated-zone::after {
-        margin-right: 20px;
+    right: 20px;
+    top: 0;
     }
 }
 
@@ -117,7 +119,6 @@ button {
     margin: 0 35px 0 0;
     text-align: end;
     height: fit-content;
-    vertical-align: center;
     grid-row-start: 1;
     grid-column: 1;
     position: relative;
@@ -132,7 +133,7 @@ button {
     border-radius: 50%;
     background-color: #ff0070;
     box-shadow: 0 0 4px 2px #ff0070;
-    margin-left: 5px;
+    right: -16px; 
     top: 9px;
 }
 
@@ -143,6 +144,10 @@ button {
         justify-self: end;
         padding-right: 9px;
     }
+
+    .icon-text::after {
+        right: -6px; 
+    }
 }
 
 .header__theme-menu {
@@ -151,6 +156,7 @@ button {
     margin-right: 10px;
     min-height: 99px;
     align-self: center;
+    
 }
 
 .header__theme-menu-list {
@@ -160,7 +166,10 @@ button {
     list-style-type: none;
     gap: 10px;
     padding: 0;
+  
 }
+
+
 
 @media (min-width: 768px) {
     .header__theme-menu {
@@ -206,9 +215,10 @@ button {
     border-bottom: 1px solid var(--decoration-color);
 }
 
+
 .header__theme-menu-button_active {
     pointer-events: none;
-    outline: var(--nav-outline);
+    outline: 1px solid var(--navigagtion-text-color);
 }
 
 .header__theme-menu-item {
@@ -348,7 +358,7 @@ main {
     .difficulties-block {
         display: grid;
         grid-template-columns: 236px auto;
-        grid-template-rows: auto auto;
+        grid-auto-flow: row;
         column-gap: 20px;
     }
 
@@ -357,11 +367,17 @@ main {
     }
 
     .difficulties-block .subtitle {
-        grid-column: 1;
-        grid-row: 1 / span 2;
-        min-width: 236px;
+      grid-column: 1;
+      grid-row: auto; 
     }
+
+    .difficulties-block .note {
+        grid-column: 2; 
+        grid-row: auto; 
+    }
+
 }
+
 
 @media (min-width: 1024px) {
     main {
@@ -385,6 +401,7 @@ main {
         gap: 20px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto;
+        grid-auto-flow: row;
     }
 
     .concentration-reduction-block .note {
@@ -495,9 +512,10 @@ main {
 .footer {
     display: grid;
     width: 100%;
-    margin: 40px 0 0 0;
+    padding: 20px 0 0 0;
+    margin-top: 20px;
     justify-content: center;
-    height: 100vh;
+    /*height: 100vh;*/
     min-height: 668px;
 }
 
@@ -523,12 +541,19 @@ main {
 }
 
 @media (min-width: 768px) {
+.footer {
+    min-height: 1024px;
+}
     .footer-title {
         font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
 }
 
 @media (min-width: 1024px) {
+    .footer {
+        min-height: 768px;
+    }
+      
     .footer-title {
         font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
