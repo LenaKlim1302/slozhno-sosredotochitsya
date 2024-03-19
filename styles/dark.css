@@ -15,10 +15,9 @@
 } 
 
 @media (prefers-color-scheme: dark) {
-  
- .page.theme_auto,
- .page.theme_dark,
- :root {
+
+  .page.theme_auto,
+  .page.theme_dark {
       --title-color: #db00ff;
       --background-color: #000028;
       --navigagtion-text-color: #ff0070;

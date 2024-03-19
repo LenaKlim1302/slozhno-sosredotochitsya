@@ -15,8 +15,8 @@
 
 @media (prefers-color-scheme: light) {
 
-.page.theme-auto,
-:root {
+  .page.theme_auto,
+  .page.theme_light {
       --title-color: #ffc2e6;
       --background-color: #fff1f7;
       --navigagtion-text-color: #353430;
