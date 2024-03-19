@@ -1,4 +1,5 @@
-.page.theme_dark {
+.page.theme_dark,
+:root {
   --title-color: #db00ff;
   --background-color: #000028;
   --navigagtion-text-color: #ff0070;
@@ -12,7 +13,8 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .page.theme_auto {
+  .page.theme_auto,
+  :root {
   --title-color: #db00ff;
   --background-color: #000028;
   --navigagtion-text-color: #ff0070;
@@ -26,6 +28,11 @@
   --page-image: url("../images/cover-image-dark.png");
 }
 
+.page.theme_auto .icon-text {
+  display: inline-block;
+}
+}
+
 .page.theme_dark .icon-text {
   display: inline-block;
 }
@@ -33,4 +40,3 @@
 .page.theme_dark .header__theme-menu {
   grid-row-start: 1;
 }
-} 
