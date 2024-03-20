@@ -217,9 +217,7 @@ button {
     outline: 1px solid var(--navigagtion-text-color);
 }
 
-/*.header__theme-menu-button_active.header__theme-menu-button_type_light {
-    pointer-events: none;
-}*/
+
 
 .header__theme-menu-item {
     color: var(--navigagtion-text-color);
