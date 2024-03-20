@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
 
-  :root.theme_dark,
+
   :root.theme_auto  {
   --title-color: #db00ff;
   --background-color: #000028;
@@ -29,12 +29,14 @@
   --page-image: url("../images/cover-image-dark.png");
 }
 
-:root.theme_dark,
+
+
 :root.theme_auto {
   display: inline-block;
 }
 }
 
+.page.theme_dark .icon-text
 :root.theme_dark .icon-text {
   display: inline-block;
 }
