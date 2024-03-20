@@ -16,7 +16,8 @@
 
 @media (prefers-color-scheme: light) {
 
-  :root {
+  :root.theme_light,
+  :root.theme_auto {
       --title-color: #ffc2e6;
       --background-color: #fff1f7;
       --navigagtion-text-color: #353430;
@@ -30,17 +31,14 @@
       --page-image: url("../images/cover-image-light.png");
   }
 
-  :root.theme_light .icon-text,
-  :root.theme_auto .icon-text,
-  .page.theme_auto .icon-text,
-  .page.theme_light .icon-text {
+  :root.theme_light,
+  :root.theme_auto  {
        display: none;
   }
 
 }
 
-:root.theme_light .icon-text,
-.page.theme_light .icon-text {
+:root.theme_light .icon-text{
   display: none;
 }
 
