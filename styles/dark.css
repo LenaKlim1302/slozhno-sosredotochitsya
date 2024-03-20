@@ -1,4 +1,4 @@
-:root .theme_dark   {
+:root.theme_dark   {
   --title-color: #db00ff;
   --background-color: #000028;
   --navigagtion-text-color: #ff0070;
@@ -28,13 +28,12 @@
   --page-image: url("../images/cover-image-dark.png");
  }
 
- .theme_auto .icon-text,
- .theme_dark .icon-text {
+ .theme_auto .icon-text {
   display: inline-block;
 }
 }
 
 
-.theme_dark .icon-text {
+.icon-text {
   display: inline-block;
 }

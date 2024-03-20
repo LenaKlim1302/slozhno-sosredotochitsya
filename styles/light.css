@@ -1,4 +1,4 @@
-:root .theme_light {
+:root.theme_light {
   --title-color: #ffc2e6;
   --background-color: #fff1f7;
   --navigagtion-text-color: #353430;
@@ -30,13 +30,13 @@
       --page-image: url("../images/cover-image-light.png");
   }
 
-.theme_light .icon-text,
+
 .theme_auto .icon-text {
     display: none;
 }
 }
 
-.theme_light .icon-text {
+ .icon-text {
   display: none;
 }
 
