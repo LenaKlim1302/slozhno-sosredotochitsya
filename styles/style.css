@@ -88,7 +88,7 @@ button {
 
 .decorated-zone {
     position: relative;
-    height: auto;
+
 }
 
 .decorated-zone::after {
@@ -112,7 +112,7 @@ button {
     width: 25px;
     height: 25px;
     justify-self: start;
-    align-self: end;
+    /*align-self: end;*/
     left: 10px;
     bottom: 10px;
     grid-row: 3;
@@ -530,9 +530,9 @@ main {
     min-height: 668px;
 }
 
-.footer .decorated-zone::after {
+/*.footer .decorated-zone::after {
     align-self: start;
-}
+}*/
 
 .footer-title {
     color: var(--title-color);
