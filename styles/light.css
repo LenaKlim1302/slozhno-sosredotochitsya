@@ -1,6 +1,5 @@
-
 @media (prefers-color-scheme: light) {
-:root {
+  :root {
       --title-color: #ffc2e6;
       --background-color: #fff1f7;
       --navigagtion-text-color: #353430;
@@ -13,11 +12,17 @@
       --decoration-color: #353430;
       --page-image: url("../images/cover-image-light.png");
   }
-.icon-text {
-    display: none;
+
+  .icon-text {
+      display: none;
+  }
 }
 
-.page.theme_light  {
+.page.theme_light .icon-text {
+  display: none;
+}
+
+.page.theme_light {
   --title-color: #ffc2e6;
   --background-color: #fff1f7;
   --navigagtion-text-color: #353430;
@@ -31,10 +36,8 @@
   --decoration-color: #353430;
 }
 
-}
 
-.page.theme_light .icon-text {
-  display: none;
-}
+
+
 
 

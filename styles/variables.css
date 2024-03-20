@@ -33,7 +33,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root  {
+  :root {
     --title-color: #db00ff;
     --background-color: #000028;
     --navigagtion-text-color: #ff0070;
