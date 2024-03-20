@@ -30,14 +30,16 @@
       --page-image: url("../images/cover-image-light.png");
   }
 
-   .page.theme_auto .icon-text {
+  :root.theme_light .icon-text,
+  :root.theme_auto .icon-text,
+  .page.theme_auto .icon-text,
+  .page.theme_light .icon-text {
        display: none;
   }
 
 }
 
-
-
+:root.theme_light .icon-text,
 .page.theme_light .icon-text {
   display: none;
 }
