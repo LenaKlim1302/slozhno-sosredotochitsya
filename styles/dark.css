@@ -26,7 +26,7 @@
   --hyperlink-outline: #f1b2ce;
   --decoration-color: #ff0070;
   --page-image: url("../images/cover-image-dark.png");
-}
+ }
 
 .page.theme_auto .icon-text {
   display: inline-block;
