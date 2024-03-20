@@ -1,3 +1,4 @@
+
 :root {
     color-scheme: light dark ;
     --title-color: #ffc2e6;
@@ -13,17 +14,12 @@
     --decoration-color: #353430;
   }
 
-
-  html, body {
-    height: 100%;
-}
+body,
 html {
-    display: table;
-    margin: auto;
-}
-body {
-    display: table-cell;
-    vertical-align: middle;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .page {
@@ -35,15 +31,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
-
-    background-repeat: no-repeat;
-    object-fit: cover;
-
-    width: 100vw;
-    height: 100vh;
     background-image: var(--page-image);
- background-attachment: fixed;
-background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    width: 100%;
 }
 
 button {
