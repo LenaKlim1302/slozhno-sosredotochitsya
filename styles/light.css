@@ -1,6 +1,5 @@
-
-:root.theme_light,
-.page.theme_light {
+.page.theme_light,
+:root.theme_light {
   --title-color: #ffc2e6;
   --background-color: #fff1f7;
   --navigagtion-text-color: #353430;
@@ -32,18 +31,12 @@
       --page-image: url("../images/cover-image-light.png");
   }
   
-  .page.theme_auto,
-  :root.theme_auto  {
-       display: none;
-  }
-
+  .icon-text {
+    display: none;
+}
 }
 
-.page.theme_light .icon-text,
-:root.theme_light .icon-text {
+.page.theme_light .icon-text {
   display: none;
 }
 
-.page.theme_dark .header__theme-menu {
-  grid-row-start: 1;
-}
