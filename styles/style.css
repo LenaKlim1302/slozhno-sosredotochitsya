@@ -73,6 +73,7 @@ button {
     min-height: 668px;
     padding: 0;
     padding-block-start: 10px;
+    background-position: center;
 }
 
 @media (min-width: 768px) {
