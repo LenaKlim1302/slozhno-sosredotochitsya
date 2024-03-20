@@ -14,8 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
 
-  .page.theme_auto,
-  :root.theme_auto  {
+  .page.theme_auto {
   --title-color: #db00ff;
   --background-color: #000028;
   --navigagtion-text-color: #ff0070;
@@ -29,7 +28,7 @@
   --page-image: url("../images/cover-image-dark.png");
 }
 
-.icon-text{
+.page.theme_auto .icon-text {
   display: inline-block;
 }
 }
