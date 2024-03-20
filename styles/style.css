@@ -13,12 +13,17 @@
     --decoration-color: #353430;
   }
 
-body,
+
+  html, body {
+    height: 100%;
+}
 html {
-    display: flex;
-    height: auto;
-    justify-content: center;
-    align-items: center;
+    display: table;
+    margin: auto;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .page {
@@ -30,12 +35,15 @@ html {
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
-    background-image: var(--page-image);
+
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
+    object-fit: cover;
+
+    width: 100vw;
+    height: 100vh;
+    background-image: var(--page-image);
+ background-attachment: fixed;
+background-position: center ;
 }
 
 button {
