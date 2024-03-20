@@ -1,4 +1,5 @@
-:root.theme_light {
+:root.theme_light,
+.page.theme_light  {
   --title-color: #ffc2e6;
   --background-color: #fff1f7;
   --navigagtion-text-color: #353430;
