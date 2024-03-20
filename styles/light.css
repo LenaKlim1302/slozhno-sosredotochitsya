@@ -1,4 +1,4 @@
-.page.theme_light,
+
 :root.theme_light {
   --title-color: #ffc2e6;
   --background-color: #fff1f7;
@@ -15,9 +15,8 @@
 
 
 @media (prefers-color-scheme: light) {
-  .page.theme_light,
-  .page.theme_auto,
-  :root.theme_auto {
+
+  :root {
       --title-color: #ffc2e6;
       --background-color: #fff1f7;
       --navigagtion-text-color: #353430;
@@ -46,6 +45,3 @@
 .page.theme_dark .header__theme-menu {
   grid-row-start: 1;
 }
-
-
-.
