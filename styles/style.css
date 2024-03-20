@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> fc4610e728a72b8b568c8fc738554062d77decb2
 :root {
     color-scheme: light dark ;
     --title-color: #ffc2e6;
@@ -32,7 +36,7 @@ html {
     background-image: var(--page-image);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-attachment: fixed;
     width: 100%;
 }
