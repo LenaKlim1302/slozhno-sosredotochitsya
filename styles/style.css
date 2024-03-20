@@ -1,7 +1,21 @@
+:root {
+    color-scheme: light dark ;
+    --title-color: #ffc2e6;
+    --background-color: #fff1f7;
+    --navigagtion-text-color: #353430;
+    --nav-outline: rgba(53, 52, 48, 0.4);
+    --accent-color: #ff8dcb;
+    --accent-text-color: #353430;
+    --subtitle-color: #353430;
+    --main-text-color: #353430;
+    --page-image: url("../images/cover-image-light.png");
+    --hyperlink-outline: #353430;
+    --decoration-color: #353430;
+  }
+
 body,
 html {
     display: flex;
-    height: auto;
     justify-content: center;
     align-items: center;
 }
@@ -72,7 +86,7 @@ button {
 
 .decorated-zone {
     position: relative;
-    height: auto;
+
 }
 
 .decorated-zone::after {
@@ -96,7 +110,7 @@ button {
     width: 25px;
     height: 25px;
     justify-self: start;
-    align-self: end;
+    /*align-self: end;*/
     left: 10px;
     bottom: 10px;
     grid-row: 3;
@@ -199,6 +213,7 @@ button {
     width: 3.9em;
 }
 
+
 .header__theme-menu-button:hover {
     outline: 1px solid var(--nav-outline);
 }
@@ -215,6 +230,8 @@ button {
     pointer-events: none;
     outline: 1px solid var(--navigagtion-text-color);
 }
+
+
 
 .header__theme-menu-item {
     color: var(--navigagtion-text-color);
@@ -511,9 +528,9 @@ main {
     min-height: 668px;
 }
 
-.footer .decorated-zone::after {
+/*.footer .decorated-zone::after {
     align-self: start;
-}
+}*/
 
 .footer-title {
     color: var(--title-color);
